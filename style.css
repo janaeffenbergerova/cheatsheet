@@ -8,6 +8,12 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    color: deepskyblue;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 70px;
+}
 
 td {
     border: 2px solid deepskyblue;
@@ -29,6 +35,7 @@ table {
     margin: 0 auto;
     border: 5px solid deepskyblue;
     background-color: azure;
+    width: 90%;
 }
 
 

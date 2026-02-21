@@ -6,6 +6,7 @@
     </head>
     <body>
         <h1>CSS properties</h1>
+        <h2>Text and colors</h2>
         <table>
             <thead>
                 <th>Property</th>
@@ -79,11 +80,6 @@
                   <td>transparency of an element</td>
                 </tr>
                 <tr>
-                  <td class="code">box-sizing</td>
-                  <td>content-box, border-box</td>
-                  <td>controls the box model used by the browser</td>
-                </tr>
-                <tr>
                   <td class="code">position</td>
                   <td>static, relative, absolute, fixed, sticky</td>
                   <td>specify the position of an element</td>
@@ -92,31 +88,6 @@
                    <td class="code">z-index</td>
                    <td>1, 2, 3</td>
                    <td>how far back or forward an element appears on the page when it overlaps other elements</td>
-                </tr>
-                <tr>
-                  <td class="code">height</td>
-                  <td>100px, 50%</td>
-                  <td>height of a content area</td>
-                </tr>
-                <tr>
-                  <td class="code">width</td>
-                  <td>200px, 80%</td>
-                  <td>width of a content area</td>
-                </tr>
-                <tr>
-                  <td class="code">border</td>
-                  <td>1px solid red, 3px dotted green, 10px dashed #56F896</td>
-                  <td>shorthand property pro border-width, border-style, border-color</td>
-                </tr>
-                <tr>
-                  <td class="code">padding</td>
-                  <td>10px, 20%</td>
-                  <td>space between the content area and the border</td>
-                </tr>
-                <tr>
-                  <td class="code">margin</td>
-                  <td>0 auto, 20px</td>
-                  <td>spacing outside of an element’s border</td>
                 </tr>
                 <tr>
                   <td class="code">overflow</td>
@@ -142,8 +113,145 @@
                   <td class="code">clear</td>
                   <td>right, left, both, none</td>
                   <td>clear an element’s left side, right side or both</td>
-                </tr>
-                
+                </tr>          
+            </tbody>
+        </table>
+        <h2>Box model</h2>
+        <table>
+            <thead>
+              <th>Property</th>
+              <th>Value</th>
+              <th>Description</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="code">box-sizing</td>
+                <td>content-box, border-box</td>
+                <td>controls the box model used by the browser</td>
+              </tr>
+              <tr>
+                <td class="code">height</td>
+                <td>100px, 50%</td>
+                <td>height of a content area</td>
+              </tr>
+              <tr>
+                <td class="code">width</td>
+                <td>200px, 80%</td>
+                <td>width of a content area</td>
+              </tr>
+              <tr>
+                <td class="code">border</td>
+                <td>1px solid red, 3px dotted green, 10px dashed #56F896</td>
+                <td>shorthand property pro border-width, border-style, border-color</td>
+              </tr>
+              <tr>
+                <td class="code">padding</td>
+                <td>10px, 20%</td>
+                <td>space between the content area and the border</td>
+              </tr>
+              <tr>
+                <td class="code">margin</td>
+                <td>0 auto, 20px</td>
+                <td>spacing outside of an element’s border</td>
+              </tr>
+            </tbody>
+        </table>
+        <h2>Flexbox</h3>
+        <table>
+          <thead>
+              <th>Property</th>
+              <th>Value</th>
+              <th>For</th>
+              <th>Axis</th>
+              <th>Description</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="code">display: flex</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>changes an element to a block-level container with flex items inside of it</td>
+              </tr>
+              <tr>
+                <td class="code">display: inline-flex</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> allows multiple flex containers to appear inline with each other</td>
+              </tr>
+              <tr>
+                <td class="code">justify-content</td>
+                <td>flex-start, flex-end, center, space-around, space-between</td>
+                <td>container</td>
+                <td>main _ </td>
+                <td>used to space items along the main (horizontal) axis</td>
+              </tr>
+              <tr>
+                <td class="code">align-items</td>
+                <td>flex-start, flex-end, center, baseline, stretch</td>
+                <td>container</td>
+                <td>cross |</td>
+                <td>space items along the cross axis, for single row</td>
+              </tr>
+              <tr>
+                <td class="code">align-content</td>
+                <td>flex-start, flex-end, center, space-around, space-between, stretch</td>
+                <td>container</td>
+                <td>cross |</td>
+                <td>is used to space rows along the cross axis, for multiple rows</td>
+              </tr>
+              <tr>
+                <td class="code">flex-grow</td>
+                <td>number (0,1,2,...), default value 0</td>
+                <td>items</td>
+                <td>main _ </td>
+                <td>specify if items should grow to fill a container and also which items should 
+                  grow proportionally more or less than others</td>
+              </tr>
+              <tr>
+                <td class="code">flex-shrink</td>
+                <td>number (0,1,2,...), default value 1</td>
+                <td>items</td>
+                <td>main _ </td>
+                <td>specify which elements will shrink and in what proportions</td>
+              </tr>
+              <tr>
+                <td class="code">flex-basis</td>
+                <td>50px, 100px, 200px,...</td>
+                <td>items</td>
+                <td></td>
+                <td>allows us to specify the width of an item before it stretches or shrinks</td>
+              </tr>
+              <tr>
+                <td class="code">flex</td>
+                <td>1, 2, 100px; 2, 1, 200px;...</td>
+                <td>items</td>
+                <td></td>
+                <td>declare flex-grow, flex-shrink, and flex-basis all in one line</td>
+              </tr>
+              <tr>
+                <td class="code">flex-wrap</td>
+                <td>wrap, wrap-reverse, nowrap</td>
+                <td>container</td>
+                <td>main _ </td>
+                <td>specifies that elements should shift along the cross axis if the flex container 
+                  is not large enough</td>
+              </tr>
+              <tr>
+                <td class="code">flex-direction</td>
+                <td>row, row-reverse, column, column-reverse</td>
+                <td>container</td>
+                <td></td>
+                <td>ordering flex items vertically or horizontally</td>
+              </tr>
+              <tr>
+                <td class="code">flex-flow</td>
+                <td>column wrap</td>
+                <td>container</td>
+                <td></td>
+                <td>declare both the flex-direction and flex-wrap properties in one line</td>
+              </tr>
             </tbody>
         </table>
     </body>
