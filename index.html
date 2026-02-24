@@ -156,7 +156,7 @@
               </tr>
             </tbody>
         </table>
-        <h2>Flexbox</h3>
+        <h2>Flexbox</h2>
         <table>
           <thead>
               <th>Property</th>
@@ -253,6 +253,94 @@
                 <td>declare both the flex-direction and flex-wrap properties in one line</td>
               </tr>
             </tbody>
+        </table>
+        <h2>Grid</h2>
+        <table>
+          <thead>
+            <th>Property</th>
+            <th>Value</th>
+            <th>Description</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="code">display</td>
+              <td>grid, inline-grid</td>
+              <td>make the element CSS grid</td>
+            </tr>
+            <tr>
+              <td class="code">grid-template-columns</td>
+              <td>100px 200px</td>
+              <td>defines the number and sizes of the columns of the grid</td>
+            </tr>
+            <tr>
+              <td class="code">grid-template-rows</td>
+              <td>50px 100px 50px</td>
+              <td>defines the number and sizes of the rows of the grid</td>
+            </tr>
+            <tr>
+              <td class="code">grid-template</td>
+              <td>200px 300px / 20% 10% 70%</td>
+              <td>is a shorthand for defining both grid-template-rows and grid-template-columns in one line</td>
+            </tr>
+            <tr>
+              <td class="code">repeat</td>
+              <td>grid-template-columns:repeat(5, 1fr), grid-template-rows: repeat(10, 100px)</td>
+              <td>five equal columns, ten rows with 100px height</td>
+            </tr>
+            <tr>
+              <td class="code">minmax</td>
+              <td>grid-template-columns: 100px minmax(100px, 500px) 100px;</td>
+              <td>to prevent a row or column from getting too big or too small, second column in example 100-500px</td>
+            </tr>
+            <tr>
+              <td class="code">row-gap</td>
+              <td>10px</td>
+              <td>puts blank space between the rows of the grid</td>
+            </tr>
+            <tr>
+              <td class="code">column-gap</td>
+              <td>20px</td>
+              <td>puts blank space between the columns of the grid</td>
+            </tr>
+            <tr>
+              <td class="code">gap</td>
+              <td>10px 20px</td>
+              <td>shorthand for defining both row-gap and column-gap in one line</td>
+            </tr>
+            <tr>
+              <td class="code">grid-row-start, grid-row-end</td>
+              <td>grid-row-start: 1; grid-row-start: 3;</td>
+              <td>makes elements span certain rows of the grid (example row 1 and 2), for grid item</td>
+            </tr>
+             <tr>
+              <td class="code">grid-row</td>
+              <td>1 / 3, 1 / span 2</td>
+              <td>shorthand for grid-row-start and grid-row-end, for items</td>
+            </tr>
+            <tr>
+              <td class="code">grid-column-start, grid-column-end</td>
+              <td>grid-column-start: 1; grid-column-end: span 3;</td>
+              <td>makes elements span certain columns of the grid, for items</td>
+            </tr>
+            <tr>
+              <td class="code">grid-column</td>
+              <td>1 / span 2</td>
+              <td>shorthand for grid-column-start and grid-column-end, for items</td>
+            </tr>
+            <tr>
+              <td class="code">grid-area</td>
+              <td>5 / 1 / span 2 / span 2</td>
+              <td>shorthand for grid-row-start, grid-column-start, grid-row-end, and grid-column-end, 
+                all in one line, for items</td>
+            </tr>
+            
+<!--        <tr>
+              <td class="code"></td>
+              <td></td>
+              <td></td>
+            </tr>
+-->
+          </tbody>
         </table>
     </body>
 </html>
